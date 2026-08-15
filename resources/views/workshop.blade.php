@@ -50,31 +50,84 @@
                             </p>
                         </div>
 
-                        <div class="rounded-lg bg-slate-50 p-4">
-                            <p class="text-sm text-slate-500">
-                                Level
-                            </p>
-
-                            <p class="mt-1 font-semibold text-slate-900">
-                                {{ $workshop['level'] }}
-                            </p>
-                        </div>
-
-                        <div class="rounded-lg bg-slate-50 p-4">
-                            <p class="text-sm text-slate-500">
-                                Category
-                            </p>
-
-                            <p class="mt-1 font-semibold text-slate-900">
-                                {{ $workshop['category'] }}
-                            </p>
-                        </div>
-
                     </div>
 
                 </div>
 
             </x-card>
+
+            {{-- Schedule Timeline --}}
+            <div class="mt-8">
+
+                <x-card title="Schedule">
+
+                    <div class="relative ml-3 border-l-2 border-indigo-200 pl-6">
+
+                        <div class="relative pb-8">
+
+                            <span
+                                class="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full bg-indigo-600 ring-4 ring-white">
+                            </span>
+
+                            <p class="text-sm font-semibold text-indigo-600">
+                                09:00 AM
+                            </p>
+
+                            <h3 class="mt-1 font-semibold text-slate-900">
+                                Introduction
+                            </h3>
+
+                            <p class="mt-1 text-sm text-slate-600">
+                                Introduction to the workshop topics and learning objectives.
+                            </p>
+
+                        </div>
+
+                        <div class="relative pb-8">
+
+                            <span
+                                class="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full bg-indigo-600 ring-4 ring-white">
+                            </span>
+
+                            <p class="text-sm font-semibold text-indigo-600">
+                                10:30 AM
+                            </p>
+
+                            <h3 class="mt-1 font-semibold text-slate-900">
+                                Practical Session
+                            </h3>
+
+                            <p class="mt-1 text-sm text-slate-600">
+                                Apply the concepts through practical examples and exercises.
+                            </p>
+
+                        </div>
+
+                        <div class="relative">
+
+                            <span
+                                class="absolute -left-[33px] flex h-4 w-4 items-center justify-center rounded-full bg-indigo-600 ring-4 ring-white">
+                            </span>
+
+                            <p class="text-sm font-semibold text-indigo-600">
+                                12:00 PM
+                            </p>
+
+                            <h3 class="mt-1 font-semibold text-slate-900">
+                                Q&A and Wrap-up
+                            </h3>
+
+                            <p class="mt-1 text-sm text-slate-600">
+                                Ask questions, review the key concepts, and wrap up the workshop.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </x-card>
+
+            </div>
 
             {{-- Instructor Profile --}}
             <div class="mt-8">
