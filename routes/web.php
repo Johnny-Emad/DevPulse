@@ -14,6 +14,7 @@ $workshops = [
         'level' => 'Intermediate',
         'description' => 'Learn how to build reusable Blade component libraries and modern Apple-style UI.'
     ],
+
     [
         'id' => 2,
         'title' => 'Laravel 11 Fundamentals & Architecture',
@@ -22,9 +23,18 @@ $workshops = [
         'date' => 'Aug 25, 2026',
         'level' => 'Beginner',
         'description' => 'Deep dive into Laravel request lifecycle, routing, layouts, and Blade slots.'
+    ],
+
+    [
+        'id' => 3,
+        'title' => 'Building Modern APIs with Laravel',
+        'category' => 'Backend',
+        'instructor' => 'Mariam Hassan',
+        'date' => 'Aug 30, 2026',
+        'level' => 'Intermediate',
+        'description' => 'Learn how to design, build, and structure modern APIs using Laravel.'
     ]
 ];
-
 // Home
 Route::get('/', function () use ($workshops) {
     return view('home', [
