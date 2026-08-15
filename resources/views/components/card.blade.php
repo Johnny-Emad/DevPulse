@@ -4,7 +4,7 @@
 ])
 
 <div {{ $attributes->merge([
-    'class' => 'rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200'
+    'class' => 'rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition duration-200 hover:-translate-y-1 hover:shadow-md'
 ]) }}>
 
     <h2 class="text-lg font-semibold text-slate-900">
