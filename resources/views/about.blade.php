@@ -4,67 +4,60 @@
         About DevPulse
     </x-slot:heading>
 
-    <section class="space-y-8">
+    <section class="space-y-10">
 
-        {{-- Introduction --}}
-        <div class="max-w-3xl">
+        {{-- Community Stats --}}
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-3">
+
+            <x-card title="Total Students">
+                <p class="text-4xl font-bold text-indigo-600">
+                    2,500+
+                </p>
+
+                <p class="mt-2 text-sm text-slate-600">
+                    Developers learning with DevPulse.
+                </p>
+            </x-card>
+
+            <x-card title="Workshops Held">
+                <p class="text-4xl font-bold text-indigo-600">
+                    120+
+                </p>
+
+                <p class="mt-2 text-sm text-slate-600">
+                    Practical workshops delivered.
+                </p>
+            </x-card>
+
+            <x-card title="Expert Instructors">
+                <p class="text-4xl font-bold text-indigo-600">
+                    25+
+                </p>
+
+                <p class="mt-2 text-sm text-slate-600">
+                    Experienced developers and instructors.
+                </p>
+            </x-card>
+
+        </div>
+
+        {{-- Platform Vision --}}
+        <div class="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
+
             <p class="text-sm font-semibold uppercase tracking-wider text-indigo-600">
-                About Us
+                Our Vision
             </p>
 
             <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900">
-                Learn practical development skills.
+                Helping developers build skills that matter.
             </h2>
 
-            <p class="mt-4 text-base leading-7 text-slate-600">
-                DevPulse is a learning platform focused on practical development
-                workshops. We help developers improve their skills through
-                focused sessions, real-world examples, and experienced instructors.
+            <p class="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+                DevPulse is built around practical learning. Our goal is to
+                connect developers with focused workshops, experienced
+                instructors, and useful knowledge that can be applied to
+                real-world development.
             </p>
-        </div>
-
-        {{-- Features --}}
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-
-            <x-card title="Practical Learning">
-                <p class="text-sm leading-6 text-slate-600">
-                    Learn through practical workshops designed around real
-                    development concepts and projects.
-                </p>
-            </x-card>
-
-            <x-card title="Experienced Instructors">
-                <p class="text-sm leading-6 text-slate-600">
-                    Learn from instructors who focus on useful development
-                    knowledge and clear explanations.
-                </p>
-            </x-card>
-
-            <x-card title="Developer Growth">
-                <p class="text-sm leading-6 text-slate-600">
-                    Build your skills step by step and keep progressing toward
-                    becoming a stronger developer.
-                </p>
-            </x-card>
-
-        </div>
-
-        {{-- CTA --}}
-        <div class="rounded-2xl bg-indigo-50 p-8 ring-1 ring-indigo-100">
-
-            <h2 class="text-2xl font-bold text-slate-900">
-                Ready to start learning?
-            </h2>
-
-            <p class="mt-2 max-w-2xl text-slate-600">
-                Explore our workshops and find your next opportunity to learn.
-            </p>
-
-            <div class="mt-6">
-                <x-button href="/workshops">
-                    Explore Workshops
-                </x-button>
-            </div>
 
         </div>
 
