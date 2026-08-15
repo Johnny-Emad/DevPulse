@@ -7,7 +7,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <title>{{ $heading ?? 'Home' }} | DevPulse</title>
+    <title>{{ $heading ?? 'Home' }}</title>
 </head>
 
 <body class="min-h-screen bg-slate-100 text-slate-800 antialiased">
