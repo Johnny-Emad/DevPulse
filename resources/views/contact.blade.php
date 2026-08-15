@@ -1,3 +1,20 @@
+@php
+    $supportContacts = [
+        [
+            'type' => 'Email',
+            'value' => 'hello@devpulse.com',
+        ],
+        [
+            'type' => 'Phone',
+            'value' => '+20 100 000 0000',
+        ],
+        [
+            'type' => 'Location',
+            'value' => 'Cairo, Egypt',
+        ],
+    ];
+@endphp
+
 <x-layout>
 
     <x-slot:heading>
@@ -6,45 +23,31 @@
 
     <section class="grid grid-cols-1 gap-8 lg:grid-cols-3">
 
-        {{-- Contact Information --}}
+        {{-- Support Contacts --}}
         <div class="lg:col-span-1">
+
             <x-card title="Get in Touch">
 
                 <div class="space-y-5">
 
-                    <div>
-                        <p class="text-sm font-semibold text-slate-900">
-                            Email
-                        </p>
+                    @foreach ($supportContacts as $contact)
 
-                        <p class="mt-1 text-sm text-slate-600">
-                            hello@devpulse.com
-                        </p>
-                    </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-900">
+                                {{ $contact['type'] }}
+                            </p>
 
-                    <div>
-                        <p class="text-sm font-semibold text-slate-900">
-                            Phone
-                        </p>
+                            <p class="mt-1 text-sm text-slate-600">
+                                {{ $contact['value'] }}
+                            </p>
+                        </div>
 
-                        <p class="mt-1 text-sm text-slate-600">
-                            +20 100 000 0000
-                        </p>
-                    </div>
-
-                    <div>
-                        <p class="text-sm font-semibold text-slate-900">
-                            Location
-                        </p>
-
-                        <p class="mt-1 text-sm text-slate-600">
-                            Cairo, Egypt
-                        </p>
-                    </div>
+                    @endforeach
 
                 </div>
 
             </x-card>
+
         </div>
 
         {{-- Contact Form --}}
